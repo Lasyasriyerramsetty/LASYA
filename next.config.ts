@@ -1,7 +1,6 @@
 ﻿import type { NextConfig } from "next";
 
-const isGithubPages = process.env.GITHUB_ACTIONS === "true";
-const repoName = "portfolio";
+const repoName = "Portfolio";
 
 const nextConfig: NextConfig = {
   output: "export",
@@ -12,7 +11,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "avatars.githubusercontent.com" },
     ],
   },
-  ...(isGithubPages
+  ...(process.env.GITHUB_ACTIONS === "true"
     ? {
         basePath: `/${repoName}`,
         assetPrefix: `/${repoName}/`,
