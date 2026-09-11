@@ -1,5 +1,6 @@
 ﻿import type { NextConfig } from "next";
 
+const isGithubPages = process.env.GITHUB_ACTIONS === "true";
 const repoName = "portfolio";
 
 const nextConfig: NextConfig = {
@@ -11,7 +12,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "avatars.githubusercontent.com" },
     ],
   },
-  ...(process.env.NODE_ENV === "production"
+  ...(isGithubPages
     ? {
         basePath: `/${repoName}`,
         assetPrefix: `/${repoName}/`,
