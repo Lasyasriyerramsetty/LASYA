@@ -283,12 +283,10 @@ export default function Hero() {
             </motion.p>
 
             <motion.p {...fadeUp(0.5)} className="body-lg" style={{ maxWidth: 440, marginBottom: 36, position: "relative", zIndex: 1 }}>
-              I design and ship AI systems that turn real problems into measurable value —
+              I design and ship AI systems that turn real problems into measurable value
               from ML pipelines and agentic workflows to full-stack products built for users,
               teams, and decision-makers.{" "}
-              <strong style={{ color: "var(--gold)", fontWeight: 600 }}>
-                HackOn with Amazon 6.0 — Student Builder Challenge winner.
-              </strong>
+              
             </motion.p>
 
             <motion.div {...fadeUp(0.58)} style={{ display: "flex", flexWrap: "wrap", gap: 10, marginBottom: 48, position: "relative", zIndex: 1 }}>

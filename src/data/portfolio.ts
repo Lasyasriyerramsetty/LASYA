@@ -5,7 +5,7 @@ export const profile = {
   shortName: "Lasya",
   tagline: "I build AI products with real-world impact.",
   description:
-    "CS sophomore at BVRIT Hyderabad building AI agents, ML systems, and full-stack products that solve real problems. I work across model design, product thinking, and engineering to turn ideas into systems people can actually use. HackOn with Amazon 6.0 — Student Builder Challenge winner.",
+    "CS sophomore at BVRIT Hyderabad building AI agents, ML systems, and full-stack products that solve real problems. I work across model design, product thinking, and engineering to turn ideas into systems people can actually use. HackOn with Amazon 6.0 Student Builder Challenge winner.",
   email: "lasyasri.yerramsetty@gmail.com",
   phone: "+91 93983 15979",
   location: "Hyderabad, India",
@@ -19,7 +19,7 @@ export const profile = {
 export const education = [
   {
     institution: "BVRIT Hyderabad College of Engineering for Women",
-    degree: "Bachelor of Technology — Computer Science & Engineering",
+    degree: "Bachelor of Technology in Computer Science and Engineering",
     gpa: "9.32",
     period: "Aug 2024 – Jun 2028",
     location: "Hyderabad, India",
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     color: "from-amber-500/20 to-orange-600/20",
     accentColor: "#f59e0b",
     problem:
-      "Creating a full marketing campaign — tagline, blog, social posts, hero image, voiceover — typically requires a team and days of manual work.",
+      "Creating a full marketing campaign (tagline, blog, social posts, hero image, voiceover) typically requires a whole team and days of manual work.",
     solution:
       "A multi-agent system that takes a single product brief and generates 6 campaign assets using 4 AI services in parallel. One prompt, complete campaign.",
     pipeline: [
@@ -209,7 +209,7 @@ export const projects: Project[] = [
     problem:
       "Recruiting at scale is slow, inconsistent, and prone to bias. Manual screening misses qualified candidates and can't audit its own decisions.",
     solution:
-      "A multi-agent pipeline (CrewAI) that screens, scores, audits, and schedules candidates autonomously — with built-in bias detection, hallucination guards, and prompt-injection safeguards.",
+      "A multi-agent pipeline built with CrewAI that screens, scores, audits, and schedules candidates autonomously, with built-in bias detection, hallucination guards, and prompt-injection safeguards.",
     pipeline: [
       { step: "01", label: "Job Description" },
       { step: "02", label: "Screening Agent" },
@@ -260,29 +260,37 @@ export const skills = [
 ];
 
 export const skillProjectMap: Record<string, string[]> = {
-  Python: ["adspark", "fraud-sms", "prompt-dojo", "crewhire"],
-  "Multi-Agent AI": ["adspark", "crewhire"],
-  "Machine Learning": ["fraud-sms", "bhumitra"],
-  "Scikit-learn": ["fraud-sms"],
-  Flask: ["fraud-sms"],
-  Streamlit: ["adspark", "prompt-dojo"],
-  Kotlin: ["fraud-sms"],
-  Groq: ["adspark", "prompt-dojo"],
-  OpenRouter: ["adspark", "prompt-dojo"],
+  // ── Languages
+  Python:     ["adspark", "fraud-sms", "prompt-dojo", "crewhire"],
+  Kotlin:     ["fraud-sms"],
   JavaScript: ["bhumitra"],
-  CrewAI: ["crewhire"],
-  "LLM Chaining": ["prompt-dojo"],
+  // ── AI / ML
+  "Multi-Agent AI":  ["adspark", "crewhire"],
+  "Machine Learning":["fraud-sms", "bhumitra"],
+  "Scikit-learn":    ["fraud-sms"],
+  "TF-IDF":          ["fraud-sms"],
+  NLP:               ["fraud-sms"],
+  "LLM Chaining":    ["prompt-dojo"],
+  // ── Frameworks
+  Flask:       ["fraud-sms"],
+  Streamlit:   ["adspark", "prompt-dojo"],
   "REST APIs": ["fraud-sms"],
+  Retrofit:    ["fraud-sms"],
+  CrewAI:      ["crewhire"],
+  Groq:        ["adspark", "prompt-dojo"],
+  OpenRouter:  ["adspark", "prompt-dojo"],
+  // ── Tools
+  GitHub: ["adspark", "bhumitra", "fraud-sms", "prompt-dojo", "crewhire"],
+  // ── Other
   Android: ["fraud-sms"],
-  "TF-IDF": ["fraud-sms"],
-  GIS: ["bhumitra"],
+  GIS:     ["bhumitra"],
 };
 
 export const achievements = [
   {
     year: "2026",
     title: "HacKOn with Amazon 6.0",
-    description: "Winner — AWS Builder Center Student Builder Challenge",
+    description: "Won the AWS Builder Center Student Builder Challenge at HacKOn with Amazon 6.0",
     type: "award",
   },
   {
@@ -299,9 +307,9 @@ export const achievements = [
     type: "showcase",
   },
   {
-    year: "2025",
+    year: "2026",
     title: "Unstop Campus Champion",
-    description: "Selected as Campus Champion — promoting student opportunities and driving campus engagement",
+    description: "Selected as Unstop Campus Champion for promoting student opportunities and driving campus engagement",
     type: "recognition",
   },
   {
@@ -312,26 +320,26 @@ export const achievements = [
   },
   {
     year: "2025",
-    title: "AlgoHack 2.0 — Volunteer",
+    title: "AlgoHack 2.0 Volunteer",
     description:
-      "Co-organized BVRIT's national-level hackathon with 100+ participants; handled registration, logistics, and session coordination",
+      "Co-organized BVRIT's national-level hackathon with 100+ participants, handling registration, logistics, and session coordination",
     type: "volunteer",
   },
 ];
 
 export const timeline = [
-  { year: "May 2022", event: "Class 10 — Perfect GPA 10.0", type: "education" },
-  { year: "Jun 2024", event: "Class 12 — GPA 9.86", type: "education" },
-  { year: "Aug 2024", event: "Joined BVRIT Hyderabad CSE", type: "education" },
-  { year: "Oct 2025", event: "Co-organized AlgoHack 2.0 (100+ participants)", type: "volunteer" },
-  { year: "2025", event: "Unstop Campus Champion", type: "achievement" },
-  { year: "2025", event: "ICSMET 2025 Conference Presentation (Circubatt)", type: "achievement" },
-  { year: "2025", event: "BVRITH R&D Showcase — Circubatt", type: "achievement" },
-  { year: "2025", event: "Fraud SMS Detection (97%+ accuracy)", type: "project" },
-  { year: "2026", event: "HacKOn with Amazon 6.0 — Student Builder Challenge Winner", type: "achievement" },
-  { year: "2026", event: "Bhumitra — AI Landslide Risk Platform", type: "project" },
-  { year: "2026", event: "AdSpark — Multi-Agent AI Engine", type: "project" },
-  { year: "2026", event: "CrewHire — AI Recruitment Pipeline", type: "project" },
-  { year: "2026", event: "Prompt Dojo — LLM Trainer", type: "project" },
-  { year: "550+", event: "LeetCode Problems Solved", type: "coding" },
+  { year: "May 2022", event: "Class 10, Perfect GPA 10.0",                         type: "education"   },
+  { year: "Jun 2024", event: "Class 12, GPA 9.86",                                 type: "education"   },
+  { year: "Aug 2024", event: "Joined BVRIT Hyderabad CSE",                          type: "education"   },
+  { year: "Oct 2025", event: "Co-organized AlgoHack 2.0 (100+ participants)",        type: "volunteer"   },
+  { year: "2025",     event: "ICSMET 2025 Circubatt Research Presentation",        type: "publication" },
+  { year: "2025",     event: "BVRITH R&D Showcase, Circubatt",                      type: "showcase"    },
+  { year: "2025",     event: "Fraud SMS Detection (97%+ accuracy)",                  type: "project"     },
+  { year: "2026",     event: "HacKOn with Amazon 6.0 Student Builder Challenge Winner", type: "achievement" },
+  { year: "2026",     event: "Unstop Campus Champion",                               type: "achievement" },
+  { year: "2026",     event: "Bhumitra, AI Landslide Risk Platform",                type: "project"     },
+  { year: "2026",     event: "AdSpark, Multi-Agent AI Engine",                      type: "project"     },
+  { year: "2026",     event: "CrewHire, AI Recruitment Pipeline",                   type: "project"     },
+  { year: "2026",     event: "Prompt Dojo, LLM Trainer",                            type: "project"     },
+  { year: "Ongoing",  event: "550+ LeetCode Problems Solved",                        type: "coding"      },
 ];

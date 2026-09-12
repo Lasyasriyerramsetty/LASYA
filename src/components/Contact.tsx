@@ -21,7 +21,7 @@ const LinkedinIcon = () => (
 );
 
 const platforms = [
-  { id: "github",   label: "GitHub",   sub: "Code & proof",       icon: <GithubIcon />,    href: profile.github,      color: "#e2e8f0" },
+  { id: "github",   label: "GitHub",   sub: "Code & projects",      icon: <GithubIcon />,    href: profile.github,      color: "#e2e8f0" },
   { id: "linkedin", label: "LinkedIn", sub: "Professional story",  icon: <LinkedinIcon />,  href: profile.linkedin,    color: "#60a5fa" },
   { id: "mail",     label: "Email",    sub: "Let's start talking", icon: <Mail size={22}/>, href: `mailto:${profile.email}`,                              color: "var(--blue)" },
 ];
